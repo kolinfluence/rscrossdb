@@ -1,0 +1,19 @@
+[package]
+name = "crossdb"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "crossdb"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+bindgen = "0.65.1"
+
+[features]
+default = ["dynamic"]
+dynamic = []
+
